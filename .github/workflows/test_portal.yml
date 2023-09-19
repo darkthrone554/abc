@@ -1,12 +1,11 @@
 name: Test the PALINDROME portal
 
 on:
-    issues:
-        types: [closed]
+   push
 
 jobs:
   test:
-    runs-on: self-hosted
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
       - name: Test the PALINDROME portal
